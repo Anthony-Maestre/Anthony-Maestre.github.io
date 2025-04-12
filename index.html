@@ -2,6 +2,28 @@
     * {
         text-align: center;
         white-space: wrap !important;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Thin', sans-serif;
+        font-family: 'Roboto Light', sans-serif;
+        font-family: 'Roboto Medium', sans-serif;
+        font-family: 'Roboto Black', sans-serif;
+        color: white;
+    }
+
+    .nav {
+        background-color: #424141;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        border-bottom: 2px solid #141414E6;
+    }
+
+    .nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
     }
 
     main {
@@ -16,20 +38,32 @@
         border: 1px solid white;
         display: flex;
         flex-direction: column;
+        row-gap: 8px;
         max-width: 19%;
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
-        background-color: #424141C0;
-        ;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    section div {
+        background-color: #424141;
+        padding: 12px 8px;
+        flex: 1;
+        align-content: center;
+    }
+
+    section div:nth-child(2) {
+        height: max-content
     }
 
     main#green section {
-        border: 1px solid green;
+        border: 1px solid limegreen;
     }
 
     main#red section {
-        border: 1px solid red;
+        border: 1px solid orangered;
     }
 
     main#yellow section {
@@ -44,22 +78,30 @@
         border: 1px solid orange;
     }
 
-    p {
+    .search {
         position: absolute;
         margin: 0;
+        color: #141414E6;
     }
 
     a {
         text-decoration: none;
         color: inherit;
         font-weight: 700;
-        }
-
+    }
 </style>
 
-<body style="margin: 0;">
+<body style="margin: 0; margin-top: 50px;">
+    <div class="nav">
+        <ul>
+            <li><a href="#white">Blanco</a></li>
+            <li><a href="#green">Verde</a></li>
+            <li><a href="#red">Rojo</a></li>
+            <li><a href="#yellow">Amarillo</a></li>
+            <li><a href="#violet">Violeta</a></li>
+        </ul>
+    </div>
     <main id="white">
-        <p>blanco</p>
         <section>
             <div data-sort-value="Armor-Piercing Rounds">
                 <figure class="mw-halign-center" typeof="mw:File"><a
@@ -827,9 +869,7 @@
             </div>
         </section>
     </main>
-
     <main id="green">
-        <p>verde</p>
         <section>
             <div data-sort-value="AtG Missile Mk. 1">
                 <figure class="mw-halign-center" typeof="mw:File"><a
@@ -1692,7 +1732,6 @@
         </section>
     </main>
     <main id="red">
-        <p>rojo</p>
         <section>
             <div data-sort-value="57 Leaf Clover">
                 <figure class="mw-halign-center" typeof="mw:File"><a
@@ -2454,7 +2493,6 @@
         </section>
     </main>
     <main id="yellow">
-        <p>amarillo</p>
         <section>
             <div data-sort-value="Charged Perforator">
                 <figure class="mw-halign-center" typeof="mw:File"><a
@@ -2899,10 +2937,10 @@
             <div style="text-align:center;white-space:nowrap" data-sort-value="Imp Overlord">
                 <figure class="mw-halign-center" typeof="mw:File"><a
                         href="https://riskofrain2.fandom.com/wiki/Imp_Overlord" title="Imp Overlord"><img
-                            src="./img/Imp_Overlord.png"
-                            decoding="async" loading="lazy" width="64" height="64" class="mw-file-element lazyload"
-                            data-image-name="Imp Overlord.png" data-image-key="Imp_Overlord.png" data-relevant="0"
-                            data-src="./img/Imp_Overlord.png" data-file-width="128" data-file-height="128"></a>
+                            src="./img/Imp_Overlord.png" decoding="async" loading="lazy" width="64" height="64"
+                            class="mw-file-element lazyload" data-image-name="Imp Overlord.png"
+                            data-image-key="Imp_Overlord.png" data-relevant="0" data-src="./img/Imp_Overlord.png"
+                            data-file-width="128" data-file-height="128"></a>
                     <figcaption></figcaption>
                 </figure><a href="https://riskofrain2.fandom.com/wiki/Imp_Overlord" title="Imp Overlord">Imp
                     Overlord</a>
@@ -2934,10 +2972,10 @@
             <div style="text-align:center;white-space:nowrap" data-sort-value="Stone Titan">
                 <figure class="mw-halign-center" typeof="mw:File"><a
                         href="https://riskofrain2.fandom.com/wiki/Stone_Titan" title="Stone Titan"><img
-                            src="./img/Stone_Titan.png"
-                            decoding="async" loading="lazy" width="64" height="64" class="mw-file-element lazyload"
-                            data-image-name="Stone Titan.png" data-image-key="Stone_Titan.png" data-relevant="0"
-                            data-src="./img/Stone_Titan.png" data-file-width="128" data-file-height="128"></a>
+                            src="./img/Stone_Titan.png" decoding="async" loading="lazy" width="64" height="64"
+                            class="mw-file-element lazyload" data-image-name="Stone Titan.png"
+                            data-image-key="Stone_Titan.png" data-relevant="0" data-src="./img/Stone_Titan.png"
+                            data-file-width="128" data-file-height="128"></a>
                     <figcaption></figcaption>
                 </figure><a href="https://riskofrain2.fandom.com/wiki/Stone_Titan" title="Stone Titan">Stone Titan</a>
             </div>
@@ -2946,7 +2984,6 @@
         </section>
     </main>
     <main id="violet">
-        <p>violeta</p>
         <section>
             <div data-sort-value="Benthic Bloom">
                 <figure class="mw-halign-center" typeof="mw:File"><a
@@ -3288,7 +3325,6 @@
         </section>
     </main>
     <main id="orange">
-        <p>naranja</p>
         <section>
             <div data-sort-value="Blast Shower">
                 <figure class="mw-halign-center" typeof="mw:File"><a
@@ -3735,28 +3771,6 @@
             </div>
         </section>
         <section>
-            <div data-sort-value="Seed of Life (Consumed)">
-                <figure class="mw-halign-center" typeof="mw:File"><a
-                        href="https://riskofrain2.fandom.com/wiki/Seed_of_Life_(Consumed)"
-                        title="Seed of Life (Consumed)"><img src="./img/Seed_of_Life_Consumed.png" decoding="async"
-                            loading="lazy" width="64" height="64" class="mw-file-element lazyloaded"
-                            data-image-name="Seed of Life (Consumed).png" data-image-key="Seed_of_Life_Consumed.png"
-                            data-relevant="0" data-src="./img/Seed_of_Life_Consumed.png" data-file-width="128"
-                            data-file-height="128"></a>
-                    <figcaption></figcaption>
-                </figure><span class="tooltip nomobile" style="position: relative; display: inline-flex;"><span
-                        class="tooltip-block nomobile"><span class="tooltip-icon"><span></span></span><span
-                            style="color: #E5C962;"></span></span></span></span></span><a
-                    href="https://riskofrain2.fandom.com/wiki/Seed_of_Life_(Consumed)" class="mw-redirect"
-                    title="Seed of Life (Consumed)">Seed of
-                    Life (Consumed)</a>
-            </div>
-            <div>On activation places a sprout that drops healing orbs.
-            </div>
-            <div style="text-align:center">15s
-            </div>
-        </section>
-        <section>
             <div data-sort-value="Super Massive Leech">
                 <figure class="mw-halign-center" typeof="mw:File"><a
                         href="https://riskofrain2.fandom.com/wiki/Super_Massive_Leech" title="Super Massive Leech"><img
@@ -3810,29 +3824,6 @@
                     bullet</span>. Costs $1 per bullet. Cost increases over time.
             </div>
             <div style="text-align:center">-
-            </div>
-        </section>
-        <section>
-            <div data-sort-value="Trophy Hunter's Tricorn">
-                <figure class="mw-halign-center" typeof="mw:File"><a
-                        href="https://riskofrain2.fandom.com/wiki/Trophy_Hunter_Tricorn"
-                        title="Trophy Hunter's Tricorn"><img src="./img/Trophy_Hunter_Tricorn.png" decoding="async"
-                            loading="lazy" width="64" height="64" class="mw-file-element lazyloaded"
-                            data-image-name="Trophy Hunter's Tricorn.png" data-image-key="Trophy_Hunter_Tricorn.png"
-                            data-relevant="0" data-src="./img/Trophy_Hunter_Tricorn.png" data-file-width="128"
-                            data-file-height="128"></a>
-                    <figcaption></figcaption>
-                </figure><span class="tooltip nomobile" style="position: relative; display: inline-flex;"><span
-                        class="tooltip-block nomobile"><span class="tooltip-icon"><span></span></span></span></span><a
-                    href="https://riskofrain2.fandom.com/wiki/Trophy_Hunter_Tricorn"
-                    title="Trophy Hunter's Tricorn">Trophy Hunter's Tricorn</a>
-            </div>
-            <div><span style="color: #E5C962;">Execute</span> any enemy capable of spawning a <span
-                    style="color: #E5C962;">unique reward</span>, and it will drop that <span
-                    style="color: #E5C962;">item</span>. Equipment is <span style="color: #95CDE5;">consumed</span> on
-                use.
-            </div>
-            <div style="text-align:center">0s
             </div>
         </section>
         <section>
